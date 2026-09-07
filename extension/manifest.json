@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+  "name": "Chat Copy",
+  "version": "0.2.3",
+  "description": "Export canonical ChatGPT history directly into native Google Docs with Drive folder routing, optional anyone-with-link sharing, copied links, and JSON/Markdown/HTML archives.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "clipboardWrite",
+    "identity",
+    "storage",
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "https://accounts.google.com/*",
+    "https://oauth2.googleapis.com/*",
+    "https://www.googleapis.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Chat Copy"
+  },
+  "commands": {
+    "toggle-chat-copy": {
+      "suggested_key": {
+        "default": "Alt+Shift+C"
+      },
+      "description": "Open Chat Copy on the current ChatGPT conversation"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "chat-copy@xenquill.local",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
+}
