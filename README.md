@@ -92,4 +92,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Bug reports should include the Chat Copy
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+Chat Copy is licensed under the **Mozilla Public License 2.0 (MPL-2.0)**. See [LICENSE](LICENSE).
+
+MPL-2.0 allows use, modification, and distribution, including as part of larger works, while requiring distributed modifications to MPL-covered source files to remain available under MPL-2.0.
